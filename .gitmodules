@@ -1,0 +1,6 @@
+[submodule "vendor/github.com/grpc-ecosystem/grpc-gateway"]
+	path = vendor/github.com/grpc-ecosystem/grpc-gateway
+	url = https://github.com/grpc-ecosystem/grpc-gateway
+[submodule "vendor/github.com/gomatic/servicer"]
+	path = vendor/github.com/gomatic/servicer
+	url = https://github.com/gomatic/servicer

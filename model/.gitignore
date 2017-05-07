@@ -1,0 +1,12 @@
+*
+
+!.gitignore
+!Dockerfile
+!Makefile
+!*.mk
+!*.go
+!*.json
+!*.yaml
+!*.proto
+!*.md
+!*/
