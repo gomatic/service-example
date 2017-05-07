@@ -3,6 +3,8 @@
 !cmd/
 !model/
 !.gitignore
+!.gitmodules
+!LICENSE
 !Dockerfile
 !Makefile
 !*.mk
