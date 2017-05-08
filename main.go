@@ -1,3 +1,5 @@
+//go:generate go-bindata -o swagger.json.go model/model.swagger.json
+
 package main
 
 import (
@@ -6,5 +8,5 @@ import (
 
 //
 func main() {
-	server.Main(run, "", "")
+	server.Main(run, "", "", MustAsset("model/model.swagger.json"))
 }
