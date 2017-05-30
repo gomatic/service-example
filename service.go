@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 
 	gw "github.com/gomatic/service-example/model"
@@ -16,5 +15,5 @@ func newService() gw.ExampleServiceServer {
 
 func (s *service) Echo(ctx context.Context, msg *gw.ExampleRequest) (*gw.ExampleResponse, error) {
 	log.Print(msg)
-	return &gw.ExampleResponse{Message: fmt.Sprintf("responding to: %s", msg.Message)}, nil
+	return &gw.ExampleResponse{Message: msg.Message}, nil
 }
