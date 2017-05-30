@@ -2,6 +2,8 @@ package main
 
 import (
 	"log"
+	"os"
+	"strings"
 
 	pb "github.com/gomatic/service-example/model"
 	"github.com/gomatic/servicer"
@@ -19,7 +21,7 @@ func run(settings servicer.Settings) error {
 	defer conn.Close()
 	c := pb.NewExampleServiceClient(conn)
 
-	r, err := c.Echo(context.Background(), &pb.ExampleRequest{})
+	r, err := c.Echo(context.Background(), &pb.ExampleRequest{Message: strings.Join(os.Args[1:], " ")})
 	if err != nil {
 		log.Fatalf("service failed: %v", err)
 	}
