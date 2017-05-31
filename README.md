@@ -7,7 +7,7 @@
 
 ## Install
 
-    go install github.com/gomatic/service-example
+    go get github.com/gomatic/service-example
     
 ## Test
 
@@ -28,7 +28,7 @@ debug routes
 
 **Install RPC client helper**
 
-    go install github.com/gomatic/service-example/cmd/service-example-client
+    go get github.com/gomatic/service-example/cmd/service-example-client
 
 **Call the service through the RPC using the client helper**
 
